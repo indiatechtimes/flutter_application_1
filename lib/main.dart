@@ -92,7 +92,79 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body:
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('A',style: TextStyle(fontSize: 25),),
+          Text('B',style: TextStyle(fontSize: 25),),
+          Text('C',style: TextStyle(fontSize: 25),),
+          Text('D',style: TextStyle(fontSize: 25),),
+          Text('E',style: TextStyle(fontSize: 25),),
+          Text('F',style: TextStyle(fontSize: 25),),
+        ],
+      )
+
+
+      /*Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('A',style: TextStyle(fontSize: 25),),
+          Text('B',style: TextStyle(fontSize: 25),),
+          Text('C',style: TextStyle(fontSize: 25),),
+          Text('D',style: TextStyle(fontSize: 25),),
+          Text('E',style: TextStyle(fontSize: 25),),
+          Text('F',style: TextStyle(fontSize: 25),),
+        ],
+      )*/
+
+
+      /*Center(
+        child: Container(
+          width: 200,
+          height: 200,
+          child: Image.asset('assets/images/Screenshot (30).png'),
+        ),
+      )*/
+
+
+      /*Center(
+        child: OutlinedButton(
+          child: Text('click on!'),
+          onPressed: (){
+            print('button clicked!');
+
+          },
+          onLongPress: (){
+            print('Button long pressed');
+          },
+        ),
+      )*/
+
+
+      /*ElevatedButton(
+        child: Text('click me'),
+        onPressed: (){
+          print('Elevated button pressed!');
+
+        },
+        onLongPress: (){
+          print('long elevated button pressed!');
+        },
+      )*/
+
+
+
+      /*TextButton(
+        child: Text('click here!'),
+        onPressed: (){
+          print('Text Button pressed!');
+        },
+        onLongPress: (){
+          print('long pressed!');
+        },
+      )*/
 
 
       /*Text('hello flutter devops',style: TextStyle(
