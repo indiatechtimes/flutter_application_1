@@ -7,7 +7,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -35,14 +34,11 @@ class MyApp extends StatelessWidget {
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
-  }//closing of Widget build(BuildContext context)
-}// closing of class MyApp extends StatelessWidget
+  } //closing of Widget build(BuildContext context)
+} // closing of class MyApp extends StatelessWidget
 
-
-
-
-
-class MyHomePage extends StatefulWidget {// This is my first intent(page)
+class MyHomePage extends StatefulWidget {
+  // This is my first intent(page)
   const MyHomePage({super.key, required this.title});
 
   // This widget is the home page of your application. It is stateful, meaning
@@ -83,32 +79,56 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text('A',style: TextStyle(fontSize: 25),),
-          Text('B',style: TextStyle(fontSize: 25),),
-          Text('C',style: TextStyle(fontSize: 25),),
-          Text('D',style: TextStyle(fontSize: 25),),
-          Text('E',style: TextStyle(fontSize: 25),),
-          Text('F',style: TextStyle(fontSize: 25),),
-        ],
-      )
+        appBar: AppBar(
+          // TRY THIS: Try changing the color here to a specific color (to
+          // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
+          // change color while the other colors stay the same.
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          // Here we take the value from the MyHomePage object that was created by
+          // the App.build method, and use it to set our appbar title.
+          title: Text(widget.title),
+        ),
+        body:
 
 
-      /*Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
+
+        /*Center(
+          child: InkWell(
+            onLongPress: () {
+              print('tapped onlongpress container');
+            },
+            onDoubleTap: () {
+              print('tapped ondouble pressed container');
+            },
+            onTap: () {
+              print('tapped ontap container');
+            },
+            child: Container(
+              width: 200,
+              height: 200,
+              color: Colors.red,
+              child: Center(
+                  child: InkWell(
+                    onTap: (){
+                      print('text pressed');
+                    },
+                      child: Text(
+                'press me',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ))),
+            ),
+
+
+
+          ),
+        )*/
+
+
+
+
+      /*Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,//spacing ke liye
+        crossAxisAlignment: CrossAxisAlignment.start,// spacing ke liye
         children: [
           Text('A',style: TextStyle(fontSize: 25),),
           Text('B',style: TextStyle(fontSize: 25),),
@@ -119,8 +139,20 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       )*/
 
+        /*Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,//spacing ke liye
+        crossAxisAlignment: CrossAxisAlignment.start,//spacing ke liye
+        children: [
+          Text('A',style: TextStyle(fontSize: 25),),
+          Text('B',style: TextStyle(fontSize: 25),),
+          Text('C',style: TextStyle(fontSize: 25),),
+          Text('D',style: TextStyle(fontSize: 25),),
+          Text('E',style: TextStyle(fontSize: 25),),
+          Text('F',style: TextStyle(fontSize: 25),),
+        ],
+      )*/
 
-      /*Center(
+        /*Center(
         child: Container(
           width: 200,
           height: 200,
@@ -128,8 +160,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       )*/
 
-
-      /*Center(
+        /*Center(
         child: OutlinedButton(
           child: Text('click on!'),
           onPressed: (){
@@ -142,8 +173,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       )*/
 
-
-      /*ElevatedButton(
+        /*ElevatedButton(
         child: Text('click me'),
         onPressed: (){
           print('Elevated button pressed!');
@@ -154,9 +184,7 @@ class _MyHomePageState extends State<MyHomePage> {
         },
       )*/
 
-
-
-      /*TextButton(
+        /*TextButton(
         child: Text('click here!'),
         onPressed: (){
           print('Text Button pressed!');
@@ -166,16 +194,14 @@ class _MyHomePageState extends State<MyHomePage> {
         },
       )*/
 
-
-      /*Text('hello flutter devops',style: TextStyle(
+        /*Text('hello flutter devops',style: TextStyle(
         color: Colors.red,
         fontSize: 30,
         fontWeight: FontWeight.bold,
         backgroundColor: Colors.indigo,
       ),)*/
 
-
-      /*Center(
+        /*Center(
         child: Container(
           width: 150,
           height: 150,
@@ -184,9 +210,8 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       )*/
 
-
-      //Center(child: Text('Hello Captain',style: TextStyle(fontSize: 30),)),
-      /*Center(
+        //Center(child: Text('Hello Captain',style: TextStyle(fontSize: 30),)),
+        /*Center(
         child: Container(
           width: 300,
           height: 300,
@@ -197,8 +222,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       )*/
 
-
-       // This trailing comma makes auto-formatting nicer for build methods.
-    );
+        // This trailing comma makes auto-formatting nicer for build methods.
+        );
   }
 }
