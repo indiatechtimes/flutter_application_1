@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -91,6 +93,174 @@ class _MyHomePageState extends State<MyHomePage> {
         body:
 
 
+        /*SingleChildScrollView(
+          child: Column(
+            children: [
+              Padding(
+                padding: EdgeInsets.only(bottom: 11),
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(children: [
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.red,
+                      child: Center(child: Text('A',style: TextStyle(fontSize: 20),)),
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.redAccent,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.lightGreenAccent,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.indigoAccent,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.black,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      margin: EdgeInsets.only(right: 11),
+                      color: Colors.red,
+                    ),
+                  ]),
+                ),
+              ),
+              Container(
+                height: 200,
+                width: 200,
+                margin: EdgeInsets.only(bottom: 11),
+                color: Colors.black,
+                child: Center(child: Text('1',style: TextStyle(fontSize: 25,color: Colors.white),)),
+              ),
+              Container(
+                height: 200,
+                width: 200,
+                color: Colors.indigo,
+                margin: EdgeInsets.only(bottom: 11),
+              ),
+              Container(
+                height: 200,
+                width: 200,
+                color: Colors.amberAccent,
+                margin: EdgeInsets.only(bottom: 11),
+              ),
+              Container(
+                height: 200,
+                width: 200,
+                color: Colors.black54,
+                margin: EdgeInsets.only(bottom: 11),
+              ),
+              Container(
+                height: 200,
+                width: 200,
+                color: Colors.black38,
+                margin: EdgeInsets.only(bottom: 11),
+              ),
+            ],
+          ),
+        )*/
+
+
 
         /*Center(
           child: InkWell(
@@ -123,10 +293,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         )*/
 
-
-
-
-      /*Row(
+        /*Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,//spacing ke liye
         crossAxisAlignment: CrossAxisAlignment.start,// spacing ke liye
         children: [
