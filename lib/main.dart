@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Home'),
     );
   } //closing of Widget build(BuildContext context)
 } // closing of class MyApp extends StatelessWidget
@@ -91,6 +91,66 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
         body:
+
+
+        /*Container(
+          color: Colors.lightBlue,
+          height: double.infinity,//parent container ka screen(desktop,android,ios,etc) ke contex me height dena
+          width: double.infinity,//parent container ka screen(desktop,android,ios,etc) ke contex me width dena
+
+
+          child: Center(
+            child: Container(
+
+              height: 200,
+              width: 200,
+              decoration: BoxDecoration(
+                color: Colors.lightGreenAccent,
+
+                //borderRadius: BorderRadius.circular(20)
+                //borderRadius: BorderRadius.only(topLeft: Radius.circular(21),bottomRight: Radius.circular(21))
+                //borderRadius: BorderRadius.all(Radius.circular(31))
+
+                /*border: Border.all(
+                  color: Colors.white,
+                  width: 4,
+                )*/
+
+                /*boxShadow: [
+                  BoxShadow(
+                    blurRadius: 20,
+                    spreadRadius: 15,
+                    color: Colors.white
+                  )
+                ]*/
+
+                shape: BoxShape.circle,
+              ),
+
+            ),
+          ),
+
+        )*/
+
+
+
+
+        /*Center(
+          child: ListView(
+
+            children: [
+              Text('one',style: TextStyle(fontSize: 21,fontWeight: FontWeight.w700),),
+              Text('two',style: TextStyle(fontSize: 21,fontWeight: FontWeight.w700),),
+              Text('three',style: TextStyle(fontSize: 21,fontWeight: FontWeight.w700),),
+              Text('four',style: TextStyle(fontSize: 21,fontWeight: FontWeight.w700),),
+              Text('five',style: TextStyle(fontSize: 21,fontWeight: FontWeight.w700),),
+              Text('six',style: TextStyle(fontSize: 21,fontWeight: FontWeight.w700),),
+
+            ],
+          ),
+        )*/
+
+
 
 
         /*SingleChildScrollView(
