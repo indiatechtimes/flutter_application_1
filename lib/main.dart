@@ -80,6 +80,18 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
+
+    var arrNames = [
+      'Saifuddin Khan',
+      'Ayan khan',
+      'Rokshar',
+      'Mohammad',
+      'Dua',
+      'MohammadShadab',
+      'Naushad',
+      'Shahnawaz Khan',
+      'Dilnawaz Khan'
+    ];
     return Scaffold(
         appBar: AppBar(
           // TRY THIS: Try changing the color here to a specific color (to
@@ -90,8 +102,172 @@ class _MyHomePageState extends State<MyHomePage> {
           // the App.build method, and use it to set our appbar title.
           title: Text(widget.title),
         ),
-        body:
+        body: Center(
+          child: Container(
+            width: 300,
 
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20)
+
+
+                        )
+
+                        )
+                      ),
+                  ),
+                  
+                  Center(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20)
+                          )
+                        ),
+
+                      ),
+                    ),
+                  )
+                ],
+              )),
+        )
+
+        /*Column(
+        children: [
+          Card(
+            elevation: 5,
+            shadowColor: Colors.indigoAccent,
+
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Text('Hello Captain',style: TextStyle(fontSize: 30),),
+            ),
+          ),
+        Card(
+          elevation: 5,
+          shadowColor: Colors.indigoAccent,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text('Hello Captain',style: TextStyle(fontSize: 30),),
+        ),
+    ),
+          Card(
+            elevation: 5,
+            shadowColor: Colors.indigoAccent,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text('Hello Captain',style: TextStyle(fontSize: 30),),
+            ),
+          )
+
+        ],
+      )*/
+
+        /*Column(
+        children: [
+          Text('Hello Captain',style: TextStyle(fontSize: 50,fontWeight: FontWeight.bold),),
+          Text('Hello Captain',style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold),),
+          Text('Hello Captain',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
+          Text('Hello Captain',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+          Text('Hello Captain',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+        ],
+      ),*/
+
+        /*Center(
+          child: Text('Hello Captain',
+              style: TextStyle(fontFamily: 'FontMain', fontSize: 30))),*/
+
+        /*Container(
+          height: 100,
+          width: 100,
+          child: CircleAvatar(
+            //backgroundImage: AssetImage('assets/images/wp3930460-parrot-security-os-wallpapers.jpg'),
+            backgroundImage: AssetImage('assets/images/userimage.jpg'),
+            backgroundColor: Colors.cyan,
+            //radius: 100, you can use radius to increase or decrease the radius of avatar insteed of taking container
+          ),
+        )*/
+
+        /*ListView.separated(itemBuilder: (context, index) {
+          return ListTile(
+            leading: Text('${index+1}'),
+            title: Text(arrNames[index]),//arrNames is the array name above this code
+            subtitle: Text('Number'),
+            trailing: Icon(Icons.add),
+          );
+        },
+        itemCount: arrNames.length,
+          //itemExtent: 100,
+          //scrollDirection: Axis.horizontal,
+          separatorBuilder: (context, index) {
+            return Divider(height: 4,thickness: 3,);
+          },
+
+        )*/
+
+        /*Container(
+        //margin: EdgeInsets.all(30),
+        margin: EdgeInsets.only(top: 20),
+        color: Colors.cyan,
+
+          child: Padding(
+            //padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.only(top: 20,bottom: 20,left: 20,right: 20),
+            child: Text('Hello Captain',style: TextStyle(fontSize: 50,color: Colors.amber),),
+          )),*/
+
+        /*Padding(
+        //padding: const EdgeInsets.all(8.0),
+        //padding: const EdgeInsets.only(top: 100),
+        //padding: const EdgeInsets.only(left: 100),
+        child: Text('Hello Captain',style: TextStyle(fontSize: 30),),
+      )*/
+
+        /*Row(
+        //mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Expanded(
+            flex: 3,
+            child: Container(
+              width: 50,
+              //height: 100,
+              color: Colors.red,
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              width: 50,
+              //height: 100,
+              color: Colors.indigoAccent,
+            ),
+          ),
+          Expanded(
+            flex: 4,
+            child: Container(
+             width: 60,
+              //height: 100,
+              color: Colors.black,
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Container(
+              width: 70,
+              //height: 100,
+              color: Colors.amberAccent,
+            ),
+          ),
+        ],
+      ),*/
 
         /*Container(
           color: Colors.lightBlue,
@@ -132,9 +308,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
         )*/
 
-
-
-
         /*Center(
           child: ListView(
 
@@ -149,9 +322,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         )*/
-
-
-
 
         /*SingleChildScrollView(
           child: Column(
@@ -319,8 +489,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         )*/
-
-
 
         /*Center(
           child: InkWell(
