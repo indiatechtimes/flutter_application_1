@@ -80,196 +80,25 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-
-    var arrNames = [
-      'Saifuddin Khan',
-      'Ayan khan',
-      'Rokshar',
-      'Mohammad',
-      'Dua',
-      'MohammadShadab',
-      'Naushad',
-      'Shahnawaz Khan',
-      'Dilnawaz Khan'
-    ];
     return Scaffold(
         appBar: AppBar(
           // TRY THIS: Try changing the color here to a specific color (to
           // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
           // change color while the other colors stay the same.
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          backgroundColor: Theme
+              .of(context)
+              .colorScheme
+              .inversePrimary,
           // Here we take the value from the MyHomePage object that was created by
           // the App.build method, and use it to set our appbar title.
           title: Text(widget.title),
         ),
-        body: Center(
-          child: Container(
-            width: 300,
+      body: Container(
 
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20)
+      )
 
 
-                        )
-
-                        )
-                      ),
-                  ),
-                  
-                  Center(
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: TextField(
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20)
-                          )
-                        ),
-
-                      ),
-                    ),
-                  )
-                ],
-              )),
-        )
-
-        /*Column(
-        children: [
-          Card(
-            elevation: 5,
-            shadowColor: Colors.indigoAccent,
-
-            child: Padding(
-              padding: const EdgeInsets.all(8),
-              child: Text('Hello Captain',style: TextStyle(fontSize: 30),),
-            ),
-          ),
-        Card(
-          elevation: 5,
-          shadowColor: Colors.indigoAccent,
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text('Hello Captain',style: TextStyle(fontSize: 30),),
-        ),
-    ),
-          Card(
-            elevation: 5,
-            shadowColor: Colors.indigoAccent,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text('Hello Captain',style: TextStyle(fontSize: 30),),
-            ),
-          )
-
-        ],
-      )*/
-
-        /*Column(
-        children: [
-          Text('Hello Captain',style: TextStyle(fontSize: 50,fontWeight: FontWeight.bold),),
-          Text('Hello Captain',style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold),),
-          Text('Hello Captain',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
-          Text('Hello Captain',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-          Text('Hello Captain',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
-        ],
-      ),*/
-
-        /*Center(
-          child: Text('Hello Captain',
-              style: TextStyle(fontFamily: 'FontMain', fontSize: 30))),*/
-
-        /*Container(
-          height: 100,
-          width: 100,
-          child: CircleAvatar(
-            //backgroundImage: AssetImage('assets/images/wp3930460-parrot-security-os-wallpapers.jpg'),
-            backgroundImage: AssetImage('assets/images/userimage.jpg'),
-            backgroundColor: Colors.cyan,
-            //radius: 100, you can use radius to increase or decrease the radius of avatar insteed of taking container
-          ),
-        )*/
-
-        /*ListView.separated(itemBuilder: (context, index) {
-          return ListTile(
-            leading: Text('${index+1}'),
-            title: Text(arrNames[index]),//arrNames is the array name above this code
-            subtitle: Text('Number'),
-            trailing: Icon(Icons.add),
-          );
-        },
-        itemCount: arrNames.length,
-          //itemExtent: 100,
-          //scrollDirection: Axis.horizontal,
-          separatorBuilder: (context, index) {
-            return Divider(height: 4,thickness: 3,);
-          },
-
-        )*/
-
-        /*Container(
-        //margin: EdgeInsets.all(30),
-        margin: EdgeInsets.only(top: 20),
-        color: Colors.cyan,
-
-          child: Padding(
-            //padding: const EdgeInsets.all(20),
-            padding: const EdgeInsets.only(top: 20,bottom: 20,left: 20,right: 20),
-            child: Text('Hello Captain',style: TextStyle(fontSize: 50,color: Colors.amber),),
-          )),*/
-
-        /*Padding(
-        //padding: const EdgeInsets.all(8.0),
-        //padding: const EdgeInsets.only(top: 100),
-        //padding: const EdgeInsets.only(left: 100),
-        child: Text('Hello Captain',style: TextStyle(fontSize: 30),),
-      )*/
-
-        /*Row(
-        //mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Expanded(
-            flex: 3,
-            child: Container(
-              width: 50,
-              //height: 100,
-              color: Colors.red,
-            ),
-          ),
-          Expanded(
-            flex: 1,
-            child: Container(
-              width: 50,
-              //height: 100,
-              color: Colors.indigoAccent,
-            ),
-          ),
-          Expanded(
-            flex: 4,
-            child: Container(
-             width: 60,
-              //height: 100,
-              color: Colors.black,
-            ),
-          ),
-          Expanded(
-            flex: 2,
-            child: Container(
-              width: 70,
-              //height: 100,
-              color: Colors.amberAccent,
-            ),
-          ),
-        ],
-      ),*/
-
-        /*Container(
+      /*Container(
           color: Colors.lightBlue,
           height: double.infinity,//parent container ka screen(desktop,android,ios,etc) ke contex me height dena
           width: double.infinity,//parent container ka screen(desktop,android,ios,etc) ke contex me width dena
@@ -308,7 +137,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
         )*/
 
-        /*Center(
+
+      /*Center(
           child: ListView(
 
             children: [
@@ -323,7 +153,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         )*/
 
-        /*SingleChildScrollView(
+
+      /*SingleChildScrollView(
           child: Column(
             children: [
               Padding(
@@ -490,7 +321,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         )*/
 
-        /*Center(
+
+      /*Center(
           child: InkWell(
             onLongPress: () {
               print('tapped onlongpress container');
@@ -521,7 +353,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         )*/
 
-        /*Row(
+      /*Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,//spacing ke liye
         crossAxisAlignment: CrossAxisAlignment.start,// spacing ke liye
         children: [
@@ -534,7 +366,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       )*/
 
-        /*Column(
+      /*Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,//spacing ke liye
         crossAxisAlignment: CrossAxisAlignment.start,//spacing ke liye
         children: [
@@ -547,7 +379,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       )*/
 
-        /*Center(
+      /*Center(
         child: Container(
           width: 200,
           height: 200,
@@ -555,7 +387,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       )*/
 
-        /*Center(
+      /*Center(
         child: OutlinedButton(
           child: Text('click on!'),
           onPressed: (){
@@ -568,7 +400,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       )*/
 
-        /*ElevatedButton(
+      /*ElevatedButton(
         child: Text('click me'),
         onPressed: (){
           print('Elevated button pressed!');
@@ -579,7 +411,7 @@ class _MyHomePageState extends State<MyHomePage> {
         },
       )*/
 
-        /*TextButton(
+      /*TextButton(
         child: Text('click here!'),
         onPressed: (){
           print('Text Button pressed!');
@@ -589,14 +421,22 @@ class _MyHomePageState extends State<MyHomePage> {
         },
       )*/
 
-        /*Text('hello flutter devops',style: TextStyle(
+
+      //TEXT WIDGET****************************************************************
+
+      /*Text('hello flutter devops',style: TextStyle(
         color: Colors.red,
         fontSize: 30,
         fontWeight: FontWeight.bold,
         backgroundColor: Colors.indigo,
       ),)*/
+      //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-        /*Center(
+
+
+      //CENTER WIDGET************************************************************
+
+      /*Center(
         child: Container(
           width: 150,
           height: 150,
@@ -605,8 +445,14 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       )*/
 
-        //Center(child: Text('Hello Captain',style: TextStyle(fontSize: 30),)),
-        /*Center(
+      //Center(child: Text('Hello Captain',style: TextStyle(fontSize: 30),)),
+      //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+      //CONTAINER WIDGET*********************************************************
+
+      /*Center(
         child: Container(
           width: 300,
           height: 300,
@@ -616,8 +462,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
         ),
       )*/
+      //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-        // This trailing comma makes auto-formatting nicer for build methods.
-        );
+
+
+
+      // This trailing comma makes auto-formatting nicer for build methods.
+    );
   }
 }
