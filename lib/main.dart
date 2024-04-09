@@ -85,15 +85,22 @@ class _MyHomePageState extends State<MyHomePage> {
           // TRY THIS: Try changing the color here to a specific color (to
           // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
           // change color while the other colors stay the same.
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          backgroundColor: Theme
+              .of(context)
+              .colorScheme
+              .inversePrimary,
           // Here we take the value from the MyHomePage object that was created by
           // the App.build method, and use it to set our appbar title.
           title: Text(widget.title),
         ),
-        body:
+        body: Container(
+          height: 300,
+          width: 300,
+          color: Colors.lightBlue,
+        )
 
 
-        /*Container(
+      /*Container(
           color: Colors.lightBlue,
           height: double.infinity,//parent container ka screen(desktop,android,ios,etc) ke contex me height dena
           width: double.infinity,//parent container ka screen(desktop,android,ios,etc) ke contex me width dena
@@ -133,9 +140,7 @@ class _MyHomePageState extends State<MyHomePage> {
         )*/
 
 
-
-
-        /*Center(
+      /*Center(
           child: ListView(
 
             children: [
@@ -151,9 +156,7 @@ class _MyHomePageState extends State<MyHomePage> {
         )*/
 
 
-
-
-        /*SingleChildScrollView(
+      /*SingleChildScrollView(
           child: Column(
             children: [
               Padding(
@@ -321,8 +324,7 @@ class _MyHomePageState extends State<MyHomePage> {
         )*/
 
 
-
-        /*Center(
+      /*Center(
           child: InkWell(
             onLongPress: () {
               print('tapped onlongpress container');
@@ -353,7 +355,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         )*/
 
-        /*Row(
+      /*Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,//spacing ke liye
         crossAxisAlignment: CrossAxisAlignment.start,// spacing ke liye
         children: [
@@ -366,7 +368,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       )*/
 
-        /*Column(
+      /*Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,//spacing ke liye
         crossAxisAlignment: CrossAxisAlignment.start,//spacing ke liye
         children: [
@@ -379,7 +381,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       )*/
 
-        /*Center(
+      /*Center(
         child: Container(
           width: 200,
           height: 200,
@@ -387,7 +389,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       )*/
 
-        /*Center(
+      /*Center(
         child: OutlinedButton(
           child: Text('click on!'),
           onPressed: (){
@@ -400,7 +402,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       )*/
 
-        /*ElevatedButton(
+      /*ElevatedButton(
         child: Text('click me'),
         onPressed: (){
           print('Elevated button pressed!');
@@ -411,7 +413,7 @@ class _MyHomePageState extends State<MyHomePage> {
         },
       )*/
 
-        /*TextButton(
+      /*TextButton(
         child: Text('click here!'),
         onPressed: (){
           print('Text Button pressed!');
@@ -421,14 +423,14 @@ class _MyHomePageState extends State<MyHomePage> {
         },
       )*/
 
-        /*Text('hello flutter devops',style: TextStyle(
+      /*Text('hello flutter devops',style: TextStyle(
         color: Colors.red,
         fontSize: 30,
         fontWeight: FontWeight.bold,
         backgroundColor: Colors.indigo,
       ),)*/
 
-        /*Center(
+      /*Center(
         child: Container(
           width: 150,
           height: 150,
@@ -437,19 +439,23 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       )*/
 
-        //Center(child: Text('Hello Captain',style: TextStyle(fontSize: 30),)),
-        /*Center(
+
+      //CONTAINER WIDGET**************************************************************************************************************
+
+      //Center(child: Text('Hello Captain',style: TextStyle(fontSize: 30),)),
+      /*Center(
         child: Container(
           width: 300,
           height: 300,
           color: Colors.red,
 
           child: Center(child: Text('hello devops!',style: TextStyle(fontSize: 25),)),
+          //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
         ),
       )*/
 
-        // This trailing comma makes auto-formatting nicer for build methods.
-        );
+      // This trailing comma makes auto-formatting nicer for build methods.
+    );
   }
 }
