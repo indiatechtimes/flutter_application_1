@@ -59,8 +59,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  var UserName=TextEditingController();
-  var PassCode=TextEditingController();
+  var UserName = TextEditingController();
+  var PassCode = TextEditingController();
   int _counter = 0;
 
   void _incrementCounter() {
@@ -92,7 +92,25 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(
+      body:
+
+
+
+
+      //****************************************************************************************************************************************************************************************************************
+
+      /*TextFormField(
+        decoration: InputDecoration(
+          hintText: "Enter Name",
+        ),
+      ),*/
+      //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+      //***************************************************************************************************************************************************************************************************
+
+      /*Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -195,7 +213,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ],
         ),
-      ),
+      ),*/
 
       /*Center(
           child: Column(
@@ -235,6 +253,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         )*/
+      //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
       //CONTAINER DECORATION******************************************************************************************************************
 
