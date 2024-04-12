@@ -59,6 +59,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  var UserName=TextEditingController();
+  var PassCode=TextEditingController();
   int _counter = 0;
 
   void _incrementCounter() {
@@ -81,29 +83,160 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-        appBar: AppBar(
-          // TRY THIS: Try changing the color here to a specific color (to
-          // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-          // change color while the other colors stay the same.
-          backgroundColor: Theme
-              .of(context)
-              .colorScheme
-              .inversePrimary,
-          // Here we take the value from the MyHomePage object that was created by
-          // the App.build method, and use it to set our appbar title.
-          title: Text(widget.title),
+      appBar: AppBar(
+        // TRY THIS: Try changing the color here to a specific color (to
+        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
+        // change color while the other colors stay the same.
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        // Here we take the value from the MyHomePage object that was created by
+        // the App.build method, and use it to set our appbar title.
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: Container(
+                width: 300,
+                child: TextField(
+                  //keyboardType: TextInputType.name,//if need, Zis type ka user ke samne keybord appear hona chahiye
+                  controller: UserName,
+
+                  //enabled: false,
+                  decoration: InputDecoration(
+                    //hintText: "Enter UserName",//if need
+                    focusedBorder: OutlineInputBorder(
+                        //user tap karega to amber color hoga
+                        borderRadius: BorderRadius.circular(11),
+                        borderSide: BorderSide(
+                          color: Colors.amber,
+                          width: 2,
+                        )),
+                    enabledBorder: OutlineInputBorder(
+                      //enabledBorded ka matab hai unfocused ,,, user un tap hoga to indigo color hoga
+                      borderRadius: BorderRadius.circular(11),
+                      borderSide: BorderSide(
+                        color: Colors.indigo,
+                        width: 2,
+
+                      ),
+                    ),
+                    disabledBorder: OutlineInputBorder(
+                      //ye form fill karane jab pahali input correct rahega to second wala inputbox enable hoga
+                      borderRadius: BorderRadius.circular(11),
+                      borderSide: BorderSide(
+                        color: Colors.black87,
+                        width: 2,
+                      ),
+                    ),
+                    prefixIcon: Icon(Icons.account_circle,color: Colors.indigoAccent),
+                    prefixText: "User Name: ",
+                    suffixIcon: IconButton(
+                      icon: Icon(Icons.remove_red_eye_sharp,color: Colors.indigoAccent),
+                      onPressed: (){
+
+                      },
+                    ),
+
+
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: Container(
+                width: 300,
+                child: TextField(
+
+                  controller: PassCode,
+                  obscureText: true,
+                  //obscuringCharacter: "*",
+                  decoration: InputDecoration(
+                    //hintText: "Enter PassCode",//if need
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(11),
+                      borderSide: BorderSide(
+                        color: Colors.amberAccent,
+                        width: 2,
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(11),
+                      borderSide: BorderSide(
+                        color: Colors.indigo,
+                        width: 2,
+                      )
+                    ),
+                    prefixIcon: Icon(Icons.password,color: Colors.indigoAccent),
+                    prefixText: "PassCode: ",
+                    suffixIcon: IconButton(
+                      icon: Icon(Icons.remove_red_eye,color: Colors.indigoAccent),
+                      onPressed: (){
+
+                      },
+                    )
+
+
+                  ),
+                ),
+              ),
+            ),
+            ElevatedButton(
+              child: Text('Login'),
+              onPressed: (){
+                String Uname=UserName.text.toString();
+                String Pcode=PassCode.text.toString();
+                print("UserName : $Uname");
+                print("Passcode : $Pcode");
+              },
+            ),
+          ],
         ),
-        body: Container(
-          height: 300,
-          width: 300,
-          color: Colors.lightBlue,
-        )
+      ),
 
+      /*Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  width: 300,
 
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
 
+                      )
+                    )
 
-        //CONTAINER DECORATION******************************************************************************************************************
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
 
+                  width: 300,
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20)
+
+                      )
+                    ),
+                  ),
+                ),
+              )
+            ],
+          ),
+        )*/
+
+      //CONTAINER DECORATION******************************************************************************************************************
 
       /*Container(
           color: Colors.lightBlue,
@@ -145,11 +278,7 @@ class _MyHomePageState extends State<MyHomePage> {
         )*/
       //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
-
-
       //LIST_VIEW*****************************************************************************************************************************
-
 
       /*Center(
           child: ListView(
@@ -167,12 +296,7 @@ class _MyHomePageState extends State<MyHomePage> {
         )*/
       //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
-
-
-
       //SINGLE_CHILD_SCROLL_VIEW****************************************************************************************************************
-
 
       /*SingleChildScrollView(
           child: Column(
@@ -342,13 +466,7 @@ class _MyHomePageState extends State<MyHomePage> {
         )*/
       //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
-
-
-
-
       //INKWELL***************************************************************************************************************************
-
 
       /*Center(
           child: InkWell(
@@ -382,9 +500,6 @@ class _MyHomePageState extends State<MyHomePage> {
         )*/
       //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
-
-
       //ROW***************************************************************************************************************************
 
       /*Row(
@@ -400,8 +515,6 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       )*/
       //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
 
       //COLUMN*********************************************************************************************************************************
 
@@ -419,9 +532,6 @@ class _MyHomePageState extends State<MyHomePage> {
       )*/
       //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
-
-
       //ADD IMAGE IN APP******************************************************************************************************************
 
       /*Center(
@@ -432,8 +542,6 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       )*/
       //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
 
       //OUTLINED BUTTON WIDGETS*************************************************************************************************************
 
@@ -451,8 +559,6 @@ class _MyHomePageState extends State<MyHomePage> {
       )*/
       //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
-
       //ELEVATED BUTTON WIDGETS***********************************************************************************************************
 
       /*ElevatedButton(
@@ -467,8 +573,6 @@ class _MyHomePageState extends State<MyHomePage> {
       )*/
       //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
-
       //TEXTBUTTON WIDGET***************************************************************************************************************
 
       /*TextButton(
@@ -482,7 +586,6 @@ class _MyHomePageState extends State<MyHomePage> {
       )*/
       //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
       //TEXT WIDGET*********************************************************************************************************************
 
       /*Text('hello flutter devops',style: TextStyle(
@@ -492,7 +595,6 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.indigo,
       ),)*/
       //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 
       //CENTER WIDGET*******************************************************************************************************************
 
@@ -505,7 +607,6 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       )*/
       //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 
       //CONTAINER WIDGET**************************************************************************************************************
 
