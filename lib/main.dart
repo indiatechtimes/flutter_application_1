@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:intl/intl.dart';
 
 void main() {
   runApp(const MyApp());
@@ -61,6 +62,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   var UserName = TextEditingController();
   var PassCode = TextEditingController();
+
   int _counter = 0;
 
   void _incrementCounter() {
@@ -76,6 +78,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+
+    var time = DateTime.now();
+
+
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
@@ -92,7 +98,52 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body:
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('dateTime: ${DateFormat().format(time)}',style: const TextStyle(fontSize: 20),),
+
+
+            // etc etc etc
+            ElevatedButton(
+              child: Text("CurrentTime"),
+              onPressed: (){
+                setState(() {
+
+                });
+              },
+            ),
+          ],
+        ),
+      ),
+
+
+
+
+      //DATE TIME**********************************************************************************************************************************************************************************************************
+
+      /*Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('dateTime: $time',style: const TextStyle(fontSize: 20),),
+            //agar sirf apko year ya month ya day ya hour ya minuts chahiye to {time.month} etc karo
+            Text("Current Year: ${time.year}"),
+            Text("Current MOnth: ${time.month}"),
+            // etc etc etc
+            ElevatedButton(
+              child: Text("CurrentTime"),
+              onPressed: (){
+                setState(() {
+
+                });
+              },
+            ),
+          ],
+        ),
+      ),*/
+      //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 
