@@ -98,11 +98,27 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(
+      body: 
+
+
+
+
+
+
+
+      /*Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('dateTime: ${DateFormat().format(time)}',style: const TextStyle(fontSize: 20),),
+            Text('dateTime: ${DateFormat().format(time)}',style: const TextStyle(fontSize: 20),),//ye inbuild formate hai
+            //ager formate dena hai to date_formate.dart file me jao aur waha se select kar lo
+            //example
+            Text('time :${DateFormat('Hms').format(time)}'),
+            Text('time: ${DateFormat('jms').format(time)}'),
+            Text('YearMonthDate: ${DateFormat('yMMMMd').format(time)}'),
+
+
+            // different type ka formate choose kar sakte hai 
 
 
             // etc etc etc
@@ -116,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ],
         ),
-      ),
+      ),*/
 
 
 
