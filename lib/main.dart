@@ -63,6 +63,10 @@ class _MyHomePageState extends State<MyHomePage> {
   var UserName = TextEditingController();
   var PassCode = TextEditingController();
 
+  callBack() {
+    print('clicked !!!!!');
+  }
+
   int _counter = 0;
 
   void _incrementCounter() {
@@ -78,9 +82,45 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-
     var time = DateTime.now();
-
+    var arrColors = [
+      Colors.indigo,
+      Colors.black38,
+      Colors.black,
+      Colors.lightGreenAccent,
+      Colors.lightGreen,
+      Colors.amberAccent,
+      Colors.red,
+      Colors.indigoAccent,
+      Colors.cyan,
+      Colors.redAccent,
+      Colors.black26,
+      Colors.purple,
+      Colors.indigo,
+      Colors.black38,
+      Colors.black,
+      Colors.lightGreenAccent,
+      Colors.lightGreen,
+      Colors.amberAccent,
+      Colors.red,
+      Colors.indigoAccent,
+      Colors.cyan,
+      Colors.redAccent,
+      Colors.black26,
+      Colors.purple,
+      Colors.indigo,
+      Colors.black38,
+      Colors.black,
+      Colors.lightGreenAccent,
+      Colors.lightGreen,
+      Colors.amberAccent,
+      Colors.red,
+      Colors.indigoAccent,
+      Colors.cyan,
+      Colors.redAccent,
+      Colors.black26,
+      Colors.purple,
+    ];
 
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
@@ -88,6 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
+
     return Scaffold(
       appBar: AppBar(
         // TRY THIS: Try changing the color here to a specific color (to
@@ -98,13 +139,232 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: 
+      body:
 
 
 
 
 
 
+      /*const Column(
+        children: [
+          CatI1(),
+          // we are just calling the class which we make below this code (top down )
+          CatI2(),
+          // we are just calling the class which we make below this code (top down )
+          CatI3(),
+          // we are just calling the class which we make below this code (top down )
+          CatI4(),
+          // we are just calling the class which we make below this code (top down )
+        ],
+      ),*/
+
+
+
+
+
+       */
+
+      /*GridView.builder(gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+          maxCrossAxisExtent: 100,
+          crossAxisSpacing: 11,
+          mainAxisSpacing: 11,
+        ), itemBuilder: (context, index) {
+          return Container(color: arrColors[index],);
+        },
+          itemCount: arrColors.length,
+
+
+        )*/
+
+      /*ElevatedButton(
+          child: Text('click me'),
+          onPressed: (){
+            callBack();
+          },
+        )*/
+
+      /*GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 3,
+          mainAxisSpacing: 11,
+          crossAxisSpacing: 11,
+
+
+        ), itemBuilder: (context, index) {
+          return Container(color: arrColors[index],);
+        },
+          itemCount: arrColors.length,// item count ka matlab container kitni baar repeat hoga ,,,,, es case me jitn acolor hai utna container hoga
+
+
+        )*/
+
+      /*GridView.extent(
+          maxCrossAxisExtent: 50,//maxCrossAxisExtent ki value size fix kar raha hai cube ka
+          // agar screen change hoga to squre hii change hoga size ke hisab se
+          children: [
+            Container(
+              color: Colors.brown,
+            ),
+            Container(
+              color: Colors.lightBlue,
+            ),
+            Container(
+              color: Colors.amberAccent,
+            ),
+            Container(
+              color: Colors.black87,
+            ),
+            Container(
+              color: Colors.brown,
+            ),
+            Container(
+              color: Colors.indigo,
+
+            ),
+            Container(
+              color: Colors.lightGreenAccent,
+            ),
+            Container(
+              color: Colors.black38,
+            ),
+            Container(
+              color: Colors.brown,
+            ),
+            Container(
+              color: Colors.lightBlue,
+            ),
+            Container(
+              color: Colors.amberAccent,
+            ),
+            Container(
+              color: Colors.black87,
+            ),
+            Container(
+              color: Colors.brown,
+            ),
+            Container(
+              color: Colors.indigo,
+
+            ),
+            Container(
+              color: Colors.lightGreenAccent,
+            ),
+            Container(
+              color: Colors.black38,
+            ),
+            Container(
+              color: Colors.brown,
+            ),
+            Container(
+              color: Colors.lightBlue,
+            ),
+            Container(
+              color: Colors.amberAccent,
+            ),
+            Container(
+              color: Colors.black87,
+            ),
+            Container(
+              color: Colors.brown,
+            ),
+            Container(
+              color: Colors.indigo,
+
+            ),
+            Container(
+              color: Colors.lightGreenAccent,
+            ),
+            Container(
+              color: Colors.black38,
+            ),
+            Container(
+              color: Colors.brown,
+            ),
+            Container(
+              color: Colors.lightBlue,
+            ),
+            Container(
+              color: Colors.amberAccent,
+            ),
+            Container(
+              color: Colors.black87,
+            ),
+            Container(
+              color: Colors.brown,
+            ),
+            Container(
+              color: Colors.indigo,
+
+            ),
+            Container(
+              color: Colors.lightGreenAccent,
+            ),
+            Container(
+              color: Colors.black38,
+            ),
+            Container(
+              color: Colors.brown,
+            ),
+            Container(
+              color: Colors.lightBlue,
+            ),
+            Container(
+              color: Colors.amberAccent,
+            ),
+            Container(
+              color: Colors.black87,
+            ),
+            Container(
+              color: Colors.brown,
+            ),
+            Container(
+              color: Colors.indigo,
+
+            ),
+            Container(
+              color: Colors.lightGreenAccent,
+            ),
+            Container(
+              color: Colors.black38,
+            ),
+
+
+          ],
+        )*/
+
+      /*GridView.count(
+          crossAxisCount: 5,//colomn ki value dena hai Gridview me colomn ki value di jati hai--- count ki value define karega ki colomn kitn arahe ga
+          // jaisa bhi screen ho landscape mode or vertical mode sabme 5 colomn hi rahe  ga
+          crossAxisSpacing: 11, //horizonlaty space miil jaiga
+          mainAxisSpacing: 4,// vertically space mill jaiga
+          children: [
+            Container(
+              color: Colors.brown,
+            ),
+            Container(
+              color: Colors.lightBlue,
+            ),
+            Container(
+              color: Colors.amberAccent,
+            ),
+            Container(
+              color: Colors.black87,
+            ),
+            Container(
+              color: Colors.brown,
+            ),
+            Container(
+              color: Colors.indigo,
+
+            ),
+            Container(
+              color: Colors.lightGreenAccent,
+            ),
+            Container(
+              color: Colors.black38,
+            )
+          ],
+        )*/
 
       /*Center(
         child: Column(
@@ -118,7 +378,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Text('YearMonthDate: ${DateFormat('yMMMMd').format(time)}'),
 
 
-            // different type ka formate choose kar sakte hai 
+            // different type ka formate choose kar sakte hai
 
 
             // etc etc etc
@@ -133,9 +393,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),*/
-
-
-
 
       //DATE TIME**********************************************************************************************************************************************************************************************************
 
@@ -161,9 +418,6 @@ class _MyHomePageState extends State<MyHomePage> {
       ),*/
       //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
-
-
       //****************************************************************************************************************************************************************************************************************
 
       /*TextFormField(
@@ -172,8 +426,6 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),*/
       //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
 
       //***************************************************************************************************************************************************************************************************
 
@@ -710,6 +962,111 @@ class _MyHomePageState extends State<MyHomePage> {
       )*/
 
       // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+class CatI1 extends StatelessWidget {
+  const CatI1({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      flex: 1,
+      child: Container(
+        color: Colors.purple,
+        child: ListView.builder(
+          itemBuilder: (context, index) => const Padding(
+            padding: EdgeInsets.all(8.0),
+            child: CircleAvatar(
+              backgroundColor: Colors.lightGreenAccent,
+            ),
+          ),
+          itemCount: 30,
+          scrollDirection: Axis.horizontal,
+        ),
+      ),
+    );
+  }
+}
+
+class CatI2 extends StatelessWidget {
+  const CatI2({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      flex: 4,
+      child: Container(
+        color: Colors.red,
+        child: ListView.builder(
+          itemBuilder: (context, index) => const ListTile(
+            leading: CircleAvatar(
+              backgroundColor: Colors.purple,
+            ),
+            title: Text('Name'),
+            subtitle: Text('Mob No'),
+            trailing: Icon(Icons.delete),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class CatI3 extends StatelessWidget {
+  const CatI3({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      flex: 3,
+      child: Container(
+        color: Colors.amber,
+        child: ListView.builder(
+          itemBuilder: (context, index) => Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              width: 200,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(16),
+                color: Colors.purple,
+              ),
+            ),
+          ),
+          itemCount: 20,
+          scrollDirection: Axis.horizontal,
+        ),
+      ),
+    );
+  }
+}
+
+class CatI4 extends StatelessWidget {
+  const CatI4({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      flex: 4,
+      child: Container(
+        height: 100,
+        color: Colors.deepOrangeAccent,
+        child: ListView.builder(
+          itemBuilder: (context, index) => Padding(
+            padding: const EdgeInsets.all(20),
+            child: Container(
+              width: 100,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(16),
+                color: Colors.black45,
+              ),
+            ),
+          ),
+          itemCount: 20,
+          scrollDirection: Axis.horizontal,
+        ),
+      ),
     );
   }
 }
