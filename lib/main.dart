@@ -146,6 +146,86 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
 
+
+
+
+        /*Center(
+          child: RichText(
+            text: TextSpan(
+              children: [
+                TextSpan(text: 'hello '),
+                TextSpan(text: 'world ',style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.purple,
+                  fontSize: 34,
+                )),
+                TextSpan(
+                  text: 'Welcome to ',
+          
+                ),
+                TextSpan(
+                  text: 'Flutter',
+                  style: TextStyle(
+                    fontSize: 40,
+                    color: Colors.deepOrange,
+                    fontWeight: FontWeight.bold,
+                  )
+                ),
+          
+              ]
+            ),
+          ),
+        )*/
+
+
+
+
+        /*Row(
+          children: [
+            Text('Hello World  '),
+            Text('Hello  ',style: TextStyle(fontSize: 30,color: Colors.purple),),
+            Text('World',style: TextStyle(fontSize: 50,color: Colors.deepOrange,fontWeight: FontWeight.bold),),
+
+          ],
+        ),*/
+
+
+
+
+
+        /*Center(
+          child: SizedBox.square(
+            dimension: 200,
+            child: TextButton(
+              onPressed: (){
+
+              },
+              child: const Text('Click Me'),
+            ),
+          ),
+        )*/
+
+
+
+
+
+        /*Center(
+          child: SizedBox(
+            width: 200,
+            height: 50,
+            child: OutlinedButton(
+              onPressed: (){
+
+              },
+              child: const Text('Click'),
+            ),
+          ),
+        )*/
+
+
+
+
+
         /*Container(
           width: double.infinity,
           height: double.infinity,
