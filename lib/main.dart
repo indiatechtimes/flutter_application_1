@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
+import 'package:flutter_application_1/rounded_btn_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -128,28 +128,301 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
 
     return Scaffold(
-      appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Stack(
+        appBar: AppBar(
+          // TRY THIS: Try changing the color here to a specific color (to
+          // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
+          // change color while the other colors stay the same.
+          backgroundColor: Theme
+              .of(context)
+              .colorScheme
+              .inversePrimary,
+          // Here we take the value from the MyHomePage object that was created by
+          // the App.build method, and use it to set our appbar title.
+          title: Text(widget.title),
+        ),
+        body:
+
+
+
+
+
+        /*Container(
+          width: double.infinity,
+          height: double.infinity,
+          child: Wrap(
+            direction: Axis.horizontal,
+            //direction: Axis.vertical,
+            //spacing: 11,//vertical spacing
+            runSpacing: 11,//horizontal spacing
+            //alignment: WrapAlignment.center,
+            //alignment: WrapAlignment.spaceBetween,
+            alignment: WrapAlignment.start,
+
+            children: [
+              Container(
+                color: Colors.brown,
+                width: 70,
+                height: 70,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.lightBlue,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.amberAccent,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.black87,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.brown,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.indigo,
+
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.lightGreenAccent,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.black38,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.brown,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.lightBlue,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.amberAccent,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.black87,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.brown,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.indigo,
+
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.lightGreenAccent,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.black38,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.brown,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.lightBlue,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.amberAccent,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.black87,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.brown,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.indigo,
+
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.lightGreenAccent,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.black38,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.brown,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.lightBlue,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.amberAccent,
+              ),
+              Container(
+                height: 70,
+                width: 70,
+                color: Colors.black87,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.brown,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.indigo,
+
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.lightGreenAccent,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.black38,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.brown,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.lightBlue,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.amberAccent,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.black87,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.brown,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.indigo,
+
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.lightGreenAccent,
+              ),
+              Container(
+                width: 70,
+                height: 70,
+                color: Colors.black38,
+              ),
+            ],
+          ),
+        )*/
+
+
+
+
+
+
+
+
+        /*RoundedButton(btnName: 'LogIn',icon: (Icons.lock),callback: (){
+          print("butten is clicked and loggind")
+        },)*/
+
+
+      /*Container(
+        width: 300,
+        height: 300,
+
+        child: Stack(
+          children: [
+            Container(
+              height: 200,
+              width: 200,
+              color: Colors.purple,
+            ),
+            Positioned(
+              left: 21,
+              top: 21,
+              //bottom: 21,
+              //right: 21,
+              child: Container(
+                height: 200,
+                width: 200,
+                color: Colors.lightGreenAccent,
+              ),
+            ),
+          ],
+        ),
+      ),*/
+
+
+      /*Stack(
         children: [
           Container(
-            width: 120,
-            height: 100,
+            width: 200,
+            height: 200,
             color: Colors.brown,
-          )
+          ),
+          Container(
+            width: 150,
+            height: 150,
+            color: Colors.lightGreenAccent,
+
+          ),
+
         ],
-      )
-
-
-
-
+      )*/
 
 
       /*const Column(
@@ -165,11 +438,6 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),*/
 
-
-
-
-
-       */
 
       /*GridView.builder(gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 100,
@@ -409,7 +677,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Text('dateTime: $time',style: const TextStyle(fontSize: 20),),
             //agar sirf apko year ya month ya day ya hour ya minuts chahiye to {time.month} etc karo
             Text("Current Year: ${time.year}"),
-            Text("Current MOnth: ${time.month}"),
+            Text("Current Month: ${time.month}"),
             // etc etc etc
             ElevatedButton(
               child: Text("CurrentTime"),
