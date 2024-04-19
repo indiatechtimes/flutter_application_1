@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/rounded_btn_widget.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -128,28 +129,34 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
 
     return Scaffold(
-        appBar: AppBar(
-          // TRY THIS: Try changing the color here to a specific color (to
-          // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-          // change color while the other colors stay the same.
-          backgroundColor: Theme
-              .of(context)
-              .colorScheme
-              .inversePrimary,
-          // Here we take the value from the MyHomePage object that was created by
-          // the App.build method, and use it to set our appbar title.
-          title: Text(widget.title),
+      appBar: AppBar(
+        // TRY THIS: Try changing the color here to a specific color (to
+        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
+        // change color while the other colors stay the same.
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        // Here we take the value from the MyHomePage object that was created by
+        // the App.build method, and use it to set our appbar title.
+        title: Text(widget.title),
+      ),
+      body:
+
+
+
+
+
+
+      /*Center(
+        child: FaIcon(
+          FontAwesomeIcons.amazon,//FontAwesomeIcons 1 library hai jo but jada extra icone provide karata hai
+          size: 50,
+          color: Colors.purple,
+
         ),
-        body:
+      )*/
 
+      //Center(child: Icon(Icons.add_business_rounded,size: 50,color: Colors.purple,)),
 
-
-
-
-
-
-
-        /*Center(
+      /*Center(
           child: RichText(
             text: TextSpan(
               children: [
@@ -161,7 +168,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 )),
                 TextSpan(
                   text: 'Welcome to ',
-          
+
                 ),
                 TextSpan(
                   text: 'Flutter',
@@ -171,16 +178,13 @@ class _MyHomePageState extends State<MyHomePage> {
                     fontWeight: FontWeight.bold,
                   )
                 ),
-          
+
               ]
             ),
           ),
         )*/
 
-
-
-
-        /*Row(
+      /*Row(
           children: [
             Text('Hello World  '),
             Text('Hello  ',style: TextStyle(fontSize: 30,color: Colors.purple),),
@@ -189,11 +193,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),*/
 
-
-
-
-
-        /*Center(
+      /*Center(
           child: SizedBox.square(
             dimension: 200,
             child: TextButton(
@@ -205,11 +205,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         )*/
 
-
-
-
-
-        /*Center(
+      /*Center(
           child: SizedBox(
             width: 200,
             height: 50,
@@ -222,11 +218,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         )*/
 
-
-
-
-
-        /*Container(
+      /*Container(
           width: double.infinity,
           height: double.infinity,
           child: Wrap(
@@ -448,17 +440,9 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         )*/
 
-
-
-
-
-
-
-
-        /*RoundedButton(btnName: 'LogIn',icon: (Icons.lock),callback: (){
+      /*RoundedButton(btnName: 'LogIn',icon: (Icons.lock),callback: (){
           print("butten is clicked and loggind")
         },)*/
-
 
       /*Container(
         width: 300,
@@ -486,7 +470,6 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),*/
 
-
       /*Stack(
         children: [
           Container(
@@ -504,7 +487,6 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       )*/
 
-
       /*const Column(
         children: [
           CatI1(),
@@ -517,7 +499,6 @@ class _MyHomePageState extends State<MyHomePage> {
           // we are just calling the class which we make below this code (top down )
         ],
       ),*/
-
 
       /*GridView.builder(gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 100,
@@ -1319,7 +1300,9 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
 /*
+
 class CatI1 extends StatelessWidget {
   const CatI1({super.key});
 
