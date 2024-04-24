@@ -138,7 +138,36 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body:
+      body: 
+
+
+
+
+
+
+      /*Container(
+        width: double.infinity,
+        height: double.infinity,
+        color: Colors.purple,
+        child: Stack(
+          children: [
+            Positioned(//Positioned stack ke ander hi kaam karega
+              //bottom: 1,
+              //right: 1,
+              //left: 1,
+              right: 1,
+              bottom: 1,
+
+              child: Container(
+                color: Colors.redAccent,
+                height: 100,
+                width: 100,
+
+              ),
+            )
+          ],
+        ),
+      )*/
 
 
 
@@ -146,7 +175,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
       /*Center(
-        child: FaIcon(
+        child: FaIcon(//FaIcon class hai
           FontAwesomeIcons.amazon,//FontAwesomeIcons 1 library hai jo but jada extra icone provide karata hai
           size: 50,
           color: Colors.purple,
