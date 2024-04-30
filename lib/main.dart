@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/rounded_btn_widget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -59,6 +61,14 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  var _width=200.0;
+  var _height=100.0;
+  bool flag=true;
+  Color bgcolor=Colors.white;
+
+
+
+  RangeValues values=const RangeValues(0, 1);
   var UserName = TextEditingController();
   var PassCode = TextEditingController();
 
@@ -81,6 +91,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+
+    RangeLabels labels=RangeLabels(values.start.toString(), values.end.toString());
+
+
     var time = DateTime.now();
     var arrColors = [
       Colors.indigo,
@@ -138,7 +152,84 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: 
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            AnimatedContainer(
+              height: _height,
+              width: _width,
+              color: bgcolor,
+              duration: const Duration(seconds: 2),
+
+
+            ),
+            ElevatedButton(onPressed: (){
+
+              setState(() {
+                if(flag){
+                  _width=100.0;
+                  _height=200.0;
+                  bgcolor=Colors.red;
+                  flag=false;
+                }
+
+
+
+                else{
+                  _width=200;
+                  _height=100;
+                  bgcolor=Colors.indigo;
+                  flag=true;
+                }
+              });
+
+
+
+
+            }, child: const Text("Animate")),
+          ],
+        ),
+      )
+
+
+
+
+
+      /*RangeSlider(
+        //activeColor: Colors.green,
+        //inactiveColor: Colors.red,
+        values: values,
+        labels: labels,
+        divisions: 10,
+
+        onChanged: (newValue){
+          values=newValue;
+
+          print('${newValue.start},${newValue.end}');
+
+
+          setState(() {
+
+          });
+
+
+        },
+      )*/
+
+
+
+
+
+
+      /*ConstrainedBox(
+        constraints: BoxConstraints(
+          maxWidth: 200,
+          maxHeight: 200,
+        ),
+
+        child: Text('Hello Captain',style: TextStyle(fontSize: 30),)),*/
+
 
 
 
